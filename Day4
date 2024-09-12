@@ -34,12 +34,11 @@ step6:Install django on terminal
 setp7:type "pip install django"
 step8:Create a project using command
 setp9:type django-admin startproject myproject;
-setp3:type "cd mysproject"
-step10:Run the server
+setp10:type "cd mysproject"
+step11:Run the server
 
 step1:-Go to projects,select settings.py;
-Step2
-setp3:type "python manage.py runserver";
+setp2:type "python manage.py runserver";
 step3:Click one the http port number;
 
 step1:-create an application using django apps
@@ -109,4 +108,4 @@ urlpatterns = [
     path('',include('students.urls')),
 ]";
 
-step15:-type "python manage.py runserver;
+step16:-type "python manage.py runserver;
