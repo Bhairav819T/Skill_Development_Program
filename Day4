@@ -36,6 +36,9 @@ step8:Create a project using command
 setp9:type django-admin startproject myproject;
 setp3:type "cd mysproject"
 step10:Run the server
+
+step1:-Go to projects,select settings.py;
+Step2
 setp3:type "python manage.py runserver";
 step3:Click one the http port number;
 
@@ -48,3 +51,32 @@ step3: C:\Python_Djangp>cd djangopro
 (pro) C:\Python_Djangp\djangopro>
 
 if not:python django sartproject "project name"
+
+
+Models.py:-Used to define data strutcures ex:-database and tables;
+views.py:- Used for handeling the data
+admin.py:-This used to register modles,this models accours in admin panel;
+
+migration:-Converts model into real database operations;
+apps.py:- 
+
+steps1:-To register application;
+step2:-Select myproject, in that select settings.py file;
+step3:-Inside the settings.py find "INSTALLED_APPS" inside that type "'students'";
+step4:-Define model for CRUD operation;
+step5:- go to module.py
+step6:type 
+           class students(models.Model):
+    fname=models.CharField(max_length=24)
+    lname=models.CharField(max_length=24)
+    email=models.EmailField()
+    phone_number=models.models.CharField( max_length=50)
+    dob=models.DateField
+    
+    def __str__(self) -> str:
+        return f"{self.fname}{self.lname}"
+
+step7:-Apply migration        
+step8:-Go to terminal and type "python manage.py makemigrations";
+
+
