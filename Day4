@@ -54,7 +54,7 @@ if not:python django sartproject "project name"
 
 
 Models.py:-Used to define data strutcures ex:-database and tables;
-views.py:- Used for handeling the data
+views.py:- Used for handeling/showing the data
 admin.py:-This used to register modles,this models accours in admin panel;
 
 migration:-Converts model into real database operations;
@@ -78,5 +78,35 @@ step6:type
 
 step7:-Apply migration        
 step8:-Go to terminal and type "python manage.py makemigrations";
+step9:-go inside mitigation in folder see file "001" to see;
 
+Step10:-select "views.py" file;
+step11:-type "    from django.shortcuts import render
+from django.http import HttpResponse
 
+# Create your views here.
+
+def student(request):
+    return HttpResponse("Hello welcome to django")
+";
+
+step12:-create a "urls.py" inside students folder
+stept13:-type"   from django.urls import path
+from.import views
+
+urlpatterns = [
+    path('',views.student,name='student')
+]
+";
+
+step14:-Go to myproject and select "urls.py" file;
+step15:-type "
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),                                      
+    path('',include('students.urls')),
+]";
+
+step15:-type "python manage.py runserver;
