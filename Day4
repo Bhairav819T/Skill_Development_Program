@@ -109,3 +109,9 @@ urlpatterns = [
 ]";
 
 step16:-type "python manage.py runserver;
+
+step1:create a templates folder inside class;
+step2:copy the html page;
+step3:-inside view type instead of def student(student):
+            return render(request,'html.html')
+step3:Run it "python manage.py runserver";
