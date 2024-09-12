@@ -1,0 +1,50 @@
+Introduction to Django CRUD:-
+                       It is python frmaework which makes easier to craete website using python.
+
+Use of Django:-
+    *)Django handles/take cares of all difficult work so the we can concentrate in a development.
+    *)Django as a concept of of (DRY)-Dont Repeat yourself.
+    *)Django also helps to login,admin and database functionality
+
+How does Django works:-
+    *)Django works on concept of (MYT)-Model View Template;
+
+Definition model:
+           It provide a data from the database;
+
+Definition of VIEW:
+
+
+Definition of Template:
+
+
+Prerequesis:
+        *)python is installed or not
+        *)check pip isntalled
+        *)we need virtual environament for python
+
+
+Steps1: Open VS code;
+step2:Craete a new project name "Class";
+setp3:Go to new terminlal
+setp4:type "py -m venv django"          //where m stands for make           //where venv stand for virtula environament
+setp5:type django\scripts\activate.bat;                    //Use cmd instead of power shell=>Issues                 //use tab after every starting 2words from command
+
+step6:Install django on terminal
+setp7:type "pip install django"
+step8:Create a project using command
+setp9:type django-admin startproject myproject;
+setp3:type "cd mysproject"
+step10:Run the server
+setp3:type "python manage.py runserver";
+step3:Click one the http port number;
+
+step1:-create an application using django apps
+step2:-go to vs code terminal 
+step3: C:\Python_Djangp>cd djangopro
+
+(pro) C:\Python_Djangp\djangopro>python manage.py startapp students
+
+(pro) C:\Python_Djangp\djangopro>
+
+if not:python django sartproject "project name"
